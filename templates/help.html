@@ -1,0 +1,98 @@
+</!DOCTYPE html>
+<html>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style type="text/css">
+	body{
+			background: url('https://ak.picdn.net/shutterstock/videos/11575961/thumb/1.jpg')
+			no-repeat center center fixed; 
+ 			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+
+	}
+	
+	p{
+		font-size: 20px;
+		margin:20px;
+		color:white
+	}
+
+	.heading{
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 400;
+		font-family: fontawesome;
+		
+	}
+
+	.btn{
+		margin-left: 20px;
+		margin-top: 50px;
+		color: white;
+	}
+
+	h1{
+		color:white;
+		margin:20px;
+	}
+</style>
+
+<head>
+	<title>Help</title>
+
+
+</head>
+
+
+<body>
+<div >
+<h1 class="heading">Terrfic Traffic</h1>
+</div>
+<h1>
+	Log-in Page
+</h1>
+<p>
+	•	When you launch the web application, you will be directed to a login page where you will enter your username and password credentials in order to go to the Home Page of the website.
+</p>
+
+<h1>
+	Home Page
+</h1>
+<p>
+•	On the Home Page, you will see an option to choose a file. Click on the option and you will be asked to choose a file from the system. From there, choose a video file with MP4 extension, select it and click on open button. You can also double click on the file to select it. When the file is selected you can then click on the submit button in order perform anomaly detection from in that video.<br>
+•	Furthermore, the navigation menu has two options other than Help, i.e., Directory and Sign Out.<br>
+•	The directory option will show you the past results that were used for anomaly detection.  Sign Out button will sign you out and take you back to the login 
+
+</p>
+
+
+<h1>
+Display Page
+</h1>
+
+
+<p>
+	•	When you will click the submit button on the Home Page, it will load for some time so you will have to wait for couple of minutes depending upon the length of the video file chosen. When the loading is complete, it will redirect you to the Display Page where you will be shown the resultant video after detection.<br>
+•	There you can play and pause it and also click on the save frame button to save the current frame from the video. The saved frames will be shown below.<br>
+•	There will also be a back button which when clicked will take you back to the Home page where you can choose another video file and submit it for detection.
+
+</p>
+<!--button action = '/choose' type="button" class="btn btn-primary">Back</button-->
+<form action="/choose" method="post">
+	<input class="btn btn-primary" type="submit" value="Back">
+</form>
+
+</body>
+
+</html>
