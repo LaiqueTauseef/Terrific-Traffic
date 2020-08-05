@@ -77,8 +77,9 @@ def upload_file():
 	if request.method == 'POST':
 		f = request.files['filename']
 		#f.save(f.filename)
-		name = f.filename 
-		os.system('cd C:/Users/ABC/Desktop/flask && python yolo_video.py --input videos/' + name + ' --output static/' + name + ' --yolo yolo')
+		name = f.filename
+		directory_path = 'C:/Users/ABC/Desktop/flask'	#Replace this with the Absolute path of the project on your system
+		os.system('cd ' + directory_path + ' && python yolo_video.py --input videos/' + name + ' --output static/' + name + ' --yolo yolo')
 		time.sleep(1)
 		return render_template('play.html')
     
